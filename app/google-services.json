@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "510644006817",
+    "project_id": "clean-architure",
+    "storage_bucket": "clean-architure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510644006817:android:e68dd1d301d69fef7165e0",
+        "android_client_info": {
+          "package_name": "com.hemanth.cleanarchiture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510644006817-rudqbbs599hie01b3s57jc6uuvtjfqv9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hemanth.cleanarchiture",
+            "certificate_hash": "f700cbace3e7767306ee6e0745d787261d28965c"
+          }
+        },
+        {
+          "client_id": "510644006817-sltu9tfdrc1qalc5f9771l7mq53f2o8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACxLPcu8guUshToB8yKFqh_mS9ywIgEno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510644006817-sltu9tfdrc1qalc5f9771l7mq53f2o8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
