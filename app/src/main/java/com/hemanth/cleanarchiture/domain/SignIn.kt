@@ -21,7 +21,7 @@ fun SignInUser(
                 Log.d(TAG, "createUserWithEmail:success")
                 val user = auth.currentUser
                 updateUI(user)
-                navController.navigate("welcome")
+                navController.navigate("electronics")
 
             } else {
                 // If sign in fails, display a message to the user.

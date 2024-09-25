@@ -22,7 +22,7 @@ fun firebaseAuthWithGoogle(
             if (task.isSuccessful) {
                 val user = auth.currentUser
                 user?.let {
-                    navController.navigate("welcome")
+                    navController.navigate("electronics")
                 }
             } else {
                 Toast.makeText(context, "Google Authentication Failed.", Toast.LENGTH_SHORT).show()

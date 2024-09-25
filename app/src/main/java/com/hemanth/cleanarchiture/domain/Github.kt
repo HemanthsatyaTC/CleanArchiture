@@ -15,7 +15,7 @@ fun github(auth: FirebaseAuth, context: android.content.Context, navController: 
     if (pendingResultTask != null) {
         pendingResultTask
             .addOnSuccessListener {
-                navController.navigate("welcome")
+                navController.navigate("electronics")
 
             }
             .addOnFailureListener {
@@ -26,7 +26,7 @@ fun github(auth: FirebaseAuth, context: android.content.Context, navController: 
         auth
             .startActivityForSignInWithProvider(context as Activity, provider.build())
             .addOnSuccessListener {
-                navController.navigate("welcome")
+                navController.navigate("electronics")
             }
             .addOnFailureListener {
                 Toast.makeText(context,"Failed to github", Toast.LENGTH_SHORT).show()

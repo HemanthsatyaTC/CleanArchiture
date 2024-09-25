@@ -51,6 +51,11 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    testOptions {
+        unitTests {
+            var includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -65,6 +70,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -96,4 +102,15 @@ dependencies {
     implementation ("androidx.room:room-ktx:2.6.1")
 
     implementation ("com.google.accompanist:accompanist-swiperefresh:0.24.5-alpha")
+
+    testImplementation("io.mockk:mockk:1.13.2")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    testImplementation ("junit:junit:4.13.2")
+    // For ViewModel testing
+    testImplementation ("androidx.arch.core:core-testing:2.1.0")
+
+    // UI Testing (Optional for Compose UI Tests)
+    androidTestImplementation ("androidx.compose.ui:ui-test-junit4:1.4.3")
+    debugImplementation ("androidx.compose.ui:ui-tooling:1.4.3")
+    debugImplementation ("androidx.compose.ui:ui-test-manifest:1.4.3")
 }
